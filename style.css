@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black;  */
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #a7bcb9;
+    overflow: hidden;
+}
+
+.container {
+    height: 70%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #5dacbd;
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.container-input h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.input-guess {
+    min-width: 40%;
+    height: 3.5rem;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid;
+    padding-left: 0.5rem;
+}
+
+.input-guess:focus {
+    outline: none;
+}
+
+.submit-btn {
+    height: 3.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 6rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
+
+.submit-btn:hover {
+    background-color:#788F95;
+    color: white;
+}
+
+.container-hearts i {
+    font-size: 3rem;
+    color: red;
+    margin: 0.5rem;
+}
+
+.comment {
+    font-size:3rem;
+    margin-left: 2rem;
+    width: 40%;
+
+}
+
+.container-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+}
+
+.container-comment i {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.last-guess {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    height: 5rem;
+}
+
+.container-feedback {
+    height: 40%;
+    margin-bottom: 1rem;
+}
+
+.feedback-text{
+    font-size:4rem;
+}
+
+.disabled {
+    color: white;
+}
+
+.enabled {
+    color: black;
+}
+
+.again-btn {
+    height: 34px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+.again-btn:hover {
+    background-color:#788F95;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    html {
+        font-size: 8px;
+    }
+
+    .comment {
+        width: 55%;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    html {
+        font-size: 6px;
+    }
+
+    .last-guess {
+        padding-top: 2rem;
+    }
+
+    .form-guess {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input-guess {
+        height: 7rem;
+    }
+
+    .submit-btn {
+        width: 15rem;
+        height: 7rem;
+        margin-top: 1rem;
+    }
+
+    .container {
+        width: 60vw;
+        padding: 2rem;
+    }
+
+}
+
+
+
+
+
